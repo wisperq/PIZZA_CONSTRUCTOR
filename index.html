@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Конструктор пиццы</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="pizzaConstructor">
+            <div class="topBlock">
+                <div class="currentIngridients">
+                    <div class="currentIngridiensHeader current"><h2>Ваш заказ</h2></div>
+                    <div class="current usedIngridients"></div>
+                    <div class="current price"><h2>Стоимость пиццы:</h2></div>
+                </div>
+                <div class="pizzaProgress">
+                    <div class="pizzaImgContainer">
+                        <div class="topBlockPizzaImg">
+                            <img src="img/1.jpg" alt="" class="part1">
+                            <img src="img/2.jpg" alt="" class="part2">
+                        </div>
+                        <div class="bottomBlockPizzaImg">
+                            <img src="img/3.jpg" alt="" class="part3">
+                            <img src="img/4.jpg" alt="" class="part4">
+                        </div>
+                        
+                        
+                    </div>
+                    <button class="confirmBtn">ЗАКАЗАТЬ</button>
+                </div>
+                
+            </div>
+            <div class="bottomBlock">
+                <div class="allIngridients">
+                    <div class="pizzaBase">
+                        <h2>Основа</h2>
+                    </div>
+                    <div class="ingridient1"><h2>Ингридиент 1</h2></div>
+                    <div class="ingridient2"><h2>Ингридиент 2</h2></div>
+                    <div class="sauce"><h2>Соус</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main-script.js"></script>
+    <script type="module" src="add-ingridients-on-order-area/add-ingridients-on-order-area.js"></script>
+</body>
+</html>

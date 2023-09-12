@@ -1,0 +1,393 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1700px;
+    height: 100vh;
+    background-image: url(img/1661362937_25-kartinkin-net-p-pitstsa-fresita-krasivo-36.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pizzaConstructor{
+    max-width: 1000px;
+    max-height: 700px;
+    background-color: rgb(7, 7, 7, .8);
+    z-index: 100;
+    border-radius: 20px;
+    
+}
+
+.current {
+    margin: 15px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.topBlock {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.currentIngridients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.allIngridients{
+    display: flex;
+}
+
+.bottomBlock {
+    margin-bottom: 15px;
+    border-top: 1px solid rgb(115, 115, 115, .8);
+}
+
+.baseIngridient{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    border-bottom: 1px solid rgb(115, 115, 115, .8);
+    color: white
+}
+
+.ingridient {
+    color: white;
+    display: flex;
+}
+
+.price {
+    margin-left: 15px;
+    display: flex;
+    color: white
+}
+
+.usedIngridients{
+    min-width: 300px;
+    min-height: 240px;
+    background-color: rgb(115, 115, 115, .8);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.pizzaProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.highlight {
+    background-color: rgb(115, 115, 115, .8);
+}
+
+.containerIngridient {
+    margin: 0 15px;
+}
+
+.basePizza, .firstIngridient, .secondIngridient, .sauceIngridient {
+    padding: 10px;
+}
+
+.pizzaBase, .ingridient1, .ingridient2, .sauce {
+    margin-top: 15px;
+}
+
+.ing{
+    background-color: transparent
+}
+
+.confirmBtn {
+    width: 300px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+    margin: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(255, 149, 0);
+}
+
+
+.pizzaImgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.topBlockPizzaImg {
+    display: flex;
+}
+
+.bottomBlockPizzaImg {
+    display: flex;
+}
+
+
+.part1 {
+    border-radius: 100% 0 0 0;
+    opacity: 0;
+}
+
+.part2 {
+    border-radius: 0 100% 0 0;
+    opacity: 0;
+}
+
+.part3 {
+    border-radius: 0 0 0 100%;
+    opacity: 0;
+}
+
+.part4 {
+    border-radius: 0 0 100% 0;
+    opacity: 0;
+}
+
+.finalWindowContainer {
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    z-index: 100;
+    max-width: 500px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(255, 149, 0);
+    border-radius: 20px;
+}
+
+
+.smileImg {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(255, 149, 0);
+    border-radius: 100%;
+}
+
+.finalText {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 20px;
+}
+
+.finalCloseBtn {
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(255, 149, 0);
+    margin: 20px;
+}
+
+.ingridient {
+    margin: 10px;
+}
+
+.finalPrice {
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.price {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.price h2 {
+    margin-right: 15px;
+}
+
+.currentIngridiensHeader {
+    font-size: 30px;
+}
+
+.ing, .containerIngridient, .ingridient {
+    cursor: pointer;
+}
+
+.onOrderIngrContainer{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(255, 149, 0, .3);
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .wrapper {
+        max-width: 1440px;
+        min-height: 100vh;
+    }
+
+    .pizzaConstructor {
+        max-width: 800px;
+        max-height: 600px;
+    }
+
+    
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .part1, .part2, .part3, .part4 {
+        width: 125px;
+        height: 125px;
+    }
+
+    .confirmBtn {
+        max-width: 250px;
+    }
+
+    .usedIngridients {
+        max-width: 250px;
+    }
+
+    .finalPrice {
+        font-size: 30px;
+    }
+
+    .confirmBtn {
+
+    }
+
+
+    .basePizza, .firstIngridient, .secondIngridient, .sauceIngridient {
+        padding: 5px;
+    }
+
+    .finalWindowContainer {
+        max-width: 400px;
+        max-height: 250px;
+    }
+
+    
+    .smileImg {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 149, 0);
+    border-radius: 100%;
+    }
+
+    .finalText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 20px;
+    }
+
+    .finalCloseBtn {
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    margin: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .bottomBlock h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+
+
+    .wrapper {
+        width: 768px;
+        height: 1100px;
+        display: block;
+    }
+
+    .pizzaConstructor {
+        margin-left: 10px;
+        max-width: 400px;
+        max-height: 1000px
+    }
+
+    .topBlock {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .allIngridients {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    .part1, .part2, .part3, .part4 {
+        width: 75px;
+        height: 75px;
+    }
+
+    .usedIngridients {
+        font-size: 14px;
+        min-height: 230px;
+    }
+
+    .confirmBtn {
+        max-width: 200px;
+        font-size: 16px;
+    }
+
+    .currentIngridients {
+        display: flex;
+    }
+
+
+
+    .finalWindowContainer {
+        max-width: 400px;
+        max-height: 250px;
+        position: absolute;
+        top: 200px;
+        left: 45px;
+    }
+
+    
+}
